@@ -131,9 +131,10 @@ async function loadRandomMeal() {
     const response = await fetch("https://www.themealdb.com/api/json/v1/1/random.php");
     const data = await response.json();
 
-    const hero = document.querySelector(".hero");
+    
+    const searchSection = document.querySelector(".search-section");
 
-    if (hero && data.meals) {
+    if (searchSection && data.meals) {
 
       const meal = data.meals[0];
 
@@ -142,7 +143,7 @@ async function loadRandomMeal() {
       randomDiv.style.marginTop = "10px";
       randomDiv.style.fontStyle = "italic";
 
-      hero.appendChild(randomDiv);
+      searchSection.appendChild(randomDiv);
     }
 
   } catch (error) {
