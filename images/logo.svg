@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="350" viewBox="0 0 300 350">
+  <!-- Escudo clássico com fundo areia clara -->
+  <path d="M50 60 
+           L250 60 
+           L250 180 
+           L150 320 
+           L50 180 Z"
+        fill="#F8F5F2" stroke="#2F3E46" stroke-width="4"/>
+
+  <!-- Letras SLP em terracota -->
+  <text x="150" y="170" font-family="Playfair Display, serif" font-size="80" 
+        font-weight="bold" text-anchor="middle" dominant-baseline="middle" fill="#C9A66B">
+    SLP
+  </text>
+</svg>

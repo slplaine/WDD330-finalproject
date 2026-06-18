@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crochet Hobby Site Plan</title>
+  <meta name="description" content="WDD 231- Simone's  final project page.">
+  <meta name="author" content="Simone Leticia Cavallari Gois Plaine">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/siteplan.css">
+  <link rel="stylesheet" href="styles/siteplan-large.css">
+  <script src="scripts/main.js" defer></script>
+  <link rel="icon" href="favicon.ico">
+</head>
+<body>
+   <header>
+      <div class="logo-title">
+        <img src="images/logo.svg" alt="Crochet Hobby Logo" class="logo">
+        <div class="title-block">
+            <h1>Crochet Hobby</h1>
+            <p>A website introducing crochet as a creative and relaxing hobby.</p>
+        </div>
+      </div>
+      <button class="hamburger" aria-label="Toggle menu"> ☰ </button>
+      <nav class="page-links"> 
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="project.html">First Project</a>  
+      </nav>
+    </header>
+    <main>
+      <h1>Thank You!</h1>
+      <p id="result"></p>
+    </main>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+
+    document.getElementById("result").textContent =
+      `Name: ${params.get("visitorName")} | Email: ${params.get("visitorEmail")}`;
+  </script>
+
+  <footer>
+    <p>©<span id="currentyear"></span> Simone Leticia C. G. Plaine – Santa Catarina, Brazil</p>
+    <p id="lastModified"></p>
+    <a href="attributions.html">Attributions</a>
+  </footer>
+</body>
+</html>

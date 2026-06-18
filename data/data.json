@@ -1,0 +1,108 @@
+[
+  {
+    "name": "Granny Square",
+    "difficulty": "Beginner",
+    "time": "30 min",
+    "material": "Cotton yarn",
+    "image": "images/grannysquare.webp"
+  },
+  {
+    "name": "Scarf",
+    "difficulty": "Beginner",
+    "time": "2 hours",
+    "material": "Acrylic yarn",
+    "image": "images/scarf.webp"
+  },
+  {
+    "name": "Beanie Hat",
+    "difficulty": "Intermediate",
+    "time": "3 hours",
+    "material": "Wool yarn",
+    "image": "images/baeanie-hat.webp"
+  },
+  {
+    "name": "Dishcloth",
+    "difficulty": "Beginner",
+    "time": "1 hour",
+    "material": "Cotton yarn",
+    "image": "images/dishcloth.webp"
+  },
+  {
+    "name": "Blanket",
+    "difficulty": "Advanced",
+    "time": "10 hours",
+    "material": "Chunky yarn",
+    "image": "images/blanket.webp"
+  },
+  {
+    "name": "Amigurumi Toy",
+    "difficulty": "Intermediate",
+    "time": "5 hours",
+    "material": "Cotton yarn",
+    "image": "images/amigurumi.webp"
+  },
+  {
+    "name": "Headband",
+    "difficulty": "Beginner",
+    "time": "40 min",
+    "material": "Acrylic yarn",
+    "image": "images/headband.webp"
+  },
+  {
+    "name": "Gloves",
+    "difficulty": "Advanced",
+    "time": "4 hours",
+    "material": "Wool yarn",    
+    "image": "images/gloves.webp"
+  },
+  {
+    "name": "Coaster",
+    "difficulty": "Beginner",
+    "time": "20 min",
+    "material": "Cotton yarn",
+    "image": "images/coaster.webp"
+  },
+  {
+    "name": "Bag",
+    "difficulty": "Intermediate",
+    "time": "6 hours",
+    "material": "Cord yarn",
+    "image": "images/bag.webp"
+  },
+  {
+    "name": "Shawl",
+    "difficulty": "Advanced",
+    "time": "8 hours",
+    "material": "Lightweight yarn",
+    "image": "images/shawl.webp"
+
+  },
+  {
+    "name": "Baby Booties",
+    "difficulty": "Intermediate",
+    "time": "2 hours",
+    "material": "Soft yarn",
+    "image": "images/babybooties.webp"
+  },
+  {
+    "name": "Sweater",
+    "difficulty": "Advanced",
+    "time": "15 hours",
+    "material": "Wool yarn",
+    "image": "images/sweater.webp"
+  },
+  {
+    "name": "Keychain",
+    "difficulty": "Beginner",
+    "time": "15 min",
+    "material": "Cotton yarn",
+    "image": "images/keychain.webp"
+  },
+  {
+    "name": "Wall Hanging",
+    "difficulty": "Intermediate",
+    "time": "3 hours",
+    "material": "Macrame cord",
+    "image": "images/wallhanging.webp"
+  }
+]
