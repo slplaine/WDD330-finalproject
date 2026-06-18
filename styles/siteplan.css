@@ -73,11 +73,16 @@ header {
 }
 
 /* menu alinhado e bem distribuído */
+
 .page-links {
-  display: flex;
-  justify-content: center;
-  gap: 25px;
+  display: none;
+  flex-direction: column;
+  gap: 15px;
   margin-top: 15px;
+}
+
+.page-links.active {
+  display: flex;
 }
 
 .page-links a {
@@ -91,9 +96,13 @@ header {
   color: var(--color-accent);
 }
 
-/* esconde o hamburger */
 .hamburger {
-  display: none;
+  display: block;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
 }
 
 /* ===== IMAGES ===== */

@@ -1,23 +1,7 @@
-/* ===== TABLET ===== */
-@media (min-width: 481px) {
-
-  .cards,
-  .card-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  /* resultados API */
-  #results {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
-}
-
 /* ===== DESKTOP ===== */
-@media (min-width: 769px) {
+@media (min-width: 1024px) {
 
-  /* ===== HEADER ===== */
+  /* HEADER */
   .logo-title {
     flex-direction: row;
     justify-content: center;
@@ -36,7 +20,7 @@
     font-size: 1.1rem;
   }
 
-  /* ===== NAV ===== */
+  /* NAV */
   .page-links {
     display: flex;
     flex-direction: row;
@@ -51,23 +35,27 @@
     display: none;
   }
 
-  /* ===== SECTIONS ===== */
+  /* SECTIONS */
   section {
     padding: 20px;
   }
 
-  /* ===== CARDS ===== */
+  /* CARDS */
   .cards,
   .card-container {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  /* ===== API RESULTS ===== */
+  /* API RESULTS */
   #results {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  /* ===== ABOUT PAGE  ===== */
+  .card {
+    max-width: 100%;
+  }
+
+  /* ABOUT */
   .about-container {
     flex-direction: row;
     align-items: center;
@@ -85,18 +73,5 @@
     height: 220px;
     object-fit: cover;
     border-radius: 50%;
-  }
-}
-
-/* ===== LARGE SCREENS ===== */
-@media (min-width: 1024px) {
-
-  /* mais espaço para resultados */
-  #results {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .card {
-    max-width: 100%;
   }
 }
