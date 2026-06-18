@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Crochet Hobby Site Plan</title>
-  <meta name="description" content="Final project for WDD 231 showcasing a crochet hobby website with projects, history, and interactive features.">
+  <title>Meal Planner</title>
+  <meta name="description" content="Final project for WDD 330.">
   <meta name="author" content="Simone Leticia Cavallari Gois Plaine">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,57 +13,93 @@
   <link rel="stylesheet" href="styles/siteplan-large.css">
   <script src="scripts/main.js" defer></script>
   <link rel="icon" href="favicon.ico">
-  <meta property="og:title" content="Crochet Hobby - WDD231 Final Project">
-  <meta property="og:description" content="Simone's WDD231 final project: a crochet hobby website showcasing history, benefits, and creative projects with modern web design.">
-  <meta property="og:image" content="https://slplaine.github.io/wdd231/finalproject/images/logo.svg">
-  <meta property="og:url" content="https://slplaine.github.io/wdd231/finalproject/index.html">
+  <meta property="og:title" content="Meal Planner - WDD330 Final Project">
+  <meta property="og:description" content="Simone's WDD330 final project: a crochet hobby website showcasing history, benefits, and creative projects with modern web design.">
+  <meta property="og:image" content="https://slplaine.github.io/wdd330/finalproject/images/logo.svg">
+  <meta property="og:url" content="https://slplaine.github.io/wdd330/finalproject/index.html">
 
 </head>
-<body class="home">
-    <header>
-      <div class="logo-title">
-        <img src="images/logo.svg" alt="Crochet Hobby Logo" class="logo">
-        <div class="title-block">
-            <h1>Crochet Hobby</h1>
-            <p>A website introducing crochet as a creative and relaxing hobby.</p>
-        </div>
-      </div>
-      <button class="hamburger" aria-label="Toggle menu"> ☰ </button>
-      <nav class="page-links"> 
-        <a href="index.html">Home</a>
-        <a href="about.html">About Me</a>
-        <a href="project.html">First Project</a>  
-      </nav>
-    </header>
-    <main> 
-        <section> 
-           <h2>What is Crochet?</h2> 
-           <p>Crochet is a craft that uses yarn and a hook to create fabric. It is relaxing, creative, and allows you to make beautiful handmade items.</p> 
-           <img src="images/croche.webp" alt="Crochet yarn and hook" loading="lazy"> 
-        </section> 
-        <section> 
-            <h2>Benefits of Crochet</h2> 
-            <ul id="benefitsList">
-            </ul> 
-        </section> 
-        <section>
-            <h2>History of Crochet</h2>
-            <p>Crochet originated in Europe in the 19th century and has become a worldwide craft. It connects tradition with creativity and continues to inspire makers today.</p>
-        </section>
+<body>
 
-        <section>
-            <h2>Why Crochet Matters Today</h2>
-            <p>In a fast-paced world, crochet offers mindfulness and sustainability. Handmade items reduce waste and bring joy to both the maker and the receiver.</p>
-        </section>
-       <div id="modal" class="modal">
-          <div class="modal-content">
-            <span id="closeModal">&times;</span>
-            <h3 id="modalTitle">Project Image</h3>
-            <img id="modalImage" src="" alt="modalImage" />
-          </div>
-        </div>
-    </main>
+<header>
+  <div class="logo-title">
+    <img src="images/logo.svg" alt="Meal Planner Logo" class="logo">
+    <div class="title-block">
+      <h1>Meal Planner</h1>
+      <p>Organize your recipes and plan your week.</p>
+    </div>
+  </div>
+
+  <button class="hamburger" aria-label="Toggle menu">☰</button>
+
   
+<nav class="page-links">
+  <a href="index.html">Home</a>
+  <a href="recipes.html">Recipes</a>
+  <a href="planner.html">Planner</a>
+  <a href="about.html">About</a>
+</nav>
+
+</header>
+<body>
+  <main>
+
+    <!-- ✅ INTRO / HERO -->
+    <section class="hero">
+     <h2>Plan Your Meals with Ease</h2>
+        <p>
+        Save recipes, organize your weekly meals, and generate your shopping list automatically.
+        </p>
+
+        <button id="startBtn">Get Started</button>
+    </section>
+
+    <!-- ✅ SEARCH -->
+    <section class="search-section">
+        <h2>Search Recipes</h2>
+
+        <input type="text" id="searchInput" placeholder="Search by ingredient...">
+        <button id="searchBtn">Search</button>
+
+        <div id="results"></div>
+    </section>
+
+    <!-- ✅ FEATURES -->
+    <section class="features">
+        <h2>Main Features</h2>
+
+        <div class="card-container">
+
+            <div class="card">
+                <h3>Recipe Search</h3>
+                <p>Find recipes using ingredients you already have.</p>
+            </div>
+
+            <div class="card">
+                <h3>Meal Planner</h3>
+                <p>Organize your weekly meals easily.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ✅ WEEKLY PLANNER PREVIEW -->
+    <section class="planner-preview">
+        <h2>Your Weekly Plan</h2>
+
+        <div class="week-grid">
+        <div>Monday</div>
+        <div>Tuesday</div>
+        <div>Wednesday</div>
+        <div>Thursday</div>
+        <div>Friday</div>
+        <div>Saturday</div>
+        <div>Sunday</div>
+        </div>
+    </section>
+
+  </main>
+
+ 
   <footer>
     <a href="https://www.loom.com/share/24e79ce336ec43d6825518edfce1fc13" target="_blank">
     Watch the Video with the Specifications Requirements</a>

@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +11,9 @@
   <link rel="stylesheet" href="styles/siteplan.css">
   <link rel="stylesheet" href="styles/siteplan-large.css">
   <script src="scripts/main.js" defer></script>
+  <script src="scripts/modal.js"></script>
+  <script src="scripts/recipes.js"></script>
+
   <link rel="icon" href="favicon.ico">
   <meta property="og:title" content="Meal Planner - WDD330 Final Project">
   <meta property="og:description" content="Simone's WDD330 final project: a meal planning website showcasing recipe organization and weekly meal planning with modern web design.">
@@ -39,39 +41,34 @@
   </nav>
 
  </header>
-    <main>
-        <section class="about-me">
-            <div class="about-container">
-                <img src="images/minha-foto.webp" alt="Simone Leticia" class="about-photo">
-                <div class="about-text">
-                <h2>About Me</h2>
-                <p>My name is Simone Leticia Cavallari Gois Plaine. I discovered crochet as a way to relax and express creativity. It became a passion that I want to share with others.</p>
-                </div>
-            </div>
+    <main> 
+        <section> 
+           <h2>What is Crochet?</h2> 
+           <p>Crochet is a craft that uses yarn and a hook to create fabric. It is relaxing, creative, and allows you to make beautiful handmade items.</p> 
+           <img src="images/croche.webp" alt="Crochet yarn and hook" loading="lazy"> 
+        </section> 
+        <section> 
+            <h2>Benefits of Crochet</h2> 
+            <ul id="benefitsList">
+            </ul> 
+        </section> 
+        <section>
+            <h2>History of Crochet</h2>
+            <p>Crochet originated in Europe in the 19th century and has become a worldwide craft. It connects tradition with creativity and continues to inspire makers today.</p>
         </section>
 
         <section>
-            <h2>Contact Me</h2>
-            <p>If you want to share your crochet experience or ask questions, fill out the form below:</p>
-
-            <form id="nameForm" action="form-action.html" method="get">
-                <label for="visitorName">Your Name:</label>
-                <input type="text" id="visitorName" name="visitorName" required>
-
-                <label for="visitorEmail">Your Email:</label>
-                <input type="email" id="visitorEmail" name="visitorEmail" required>
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-
-                <button type="submit">Send</button>
-            </form>
-
-            <p id="welcomeMessage"></p>
+            <h2>Why Crochet Matters Today</h2>
+            <p>In a fast-paced world, crochet offers mindfulness and sustainability. Handmade items reduce waste and bring joy to both the maker and the receiver.</p>
         </section>
-
+       <div id="modal" class="modal">
+          <div class="modal-content">
+            <span id="closeModal">&times;</span>
+            <h3 id="modalTitle">Project Image</h3>
+            <img id="modalImage" src="" alt="modalImage" />
+          </div>
+        </div>
     </main>
-
   
   <footer>
     <a href="https://www.loom.com/share/24e79ce336ec43d6825518edfce1fc13" target="_blank">
