@@ -43,12 +43,17 @@
       <h1>Thank You!</h1>
       <p id="result"></p>
     </main>
+
   <script>
     const params = new URLSearchParams(window.location.search);
 
+    const name = params.get("visitorName");
+    const email = params.get("visitorEmail");
+
     document.getElementById("result").textContent =
-      `Name: ${params.get("visitorName")} | Email: ${params.get("visitorEmail")}`;
+      `Thank you, ${name}! We will contact you soon at ${email}.`;
   </script>
+
 
   <footer>
     <p>©<span id="currentyear"></span> Simone Leticia C. G. Plaine – Santa Catarina, Brazil</p>
