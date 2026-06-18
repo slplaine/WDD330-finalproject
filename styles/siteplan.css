@@ -18,7 +18,11 @@ body {
   font-family: var(--font-body);
   background-color: var(--color-bg);
   color: var(--color-text);
-  margin: var(--spacing);
+  margin: 0;
+}
+
+main {
+  padding: var(--spacing);
 }
 
 h1, h2 {
@@ -36,57 +40,60 @@ section {
 /* ===== HEADER ===== */
 header {
   background-color: var(--color-bg);
-  padding: var(--spacing);
+  padding: 20px 10px;
   border-bottom: 3px solid var(--color-accent);
-}
-
-.logo-title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 12px;
-}
-
-.logo {
-  width: 100px;
-}
-
-.title-block {
   text-align: center;
 }
 
-/* ===== NAV ===== */
-.page-links {
-  display: none;
-  flex-direction: column;
+/* logo + título alinhados e centralizados */
+.logo-title {
+  display: flex;
+  justify-content: center;
   align-items: center;
-  background-color: var(--color-white);
-  padding: var(--spacing);
-  border-radius: var(--radius);
+  gap: 20px;
 }
 
-.page-links.active {
+.logo {
+  width: 80px;
+}
+
+.title-block {
+  text-align: left;
+}
+
+.title-block h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+/* subtítulo alinhado com título */
+.title-block p {
+  margin: 5px 0 0;
+  font-size: 1.1rem;
+}
+
+/* menu alinhado e bem distribuído */
+.page-links {
   display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 15px;
 }
 
 .page-links a {
   text-decoration: none;
   color: var(--color-primary);
   font-weight: bold;
+  font-size: 1.1rem;
 }
 
 .page-links a:hover {
   color: var(--color-accent);
 }
 
+/* esconde o hamburger */
 .hamburger {
-  font-size: 2rem;
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: var(--color-primary);
-  display: block;
-  margin: 0 auto;
+  display: none;
 }
 
 /* ===== IMAGES ===== */
@@ -108,6 +115,7 @@ input, textarea {
   border: 1px solid var(--color-text);
 }
 
+/* ===== BUTTON ===== */
 button {
   background-color: var(--color-accent);
   color: var(--color-white);
@@ -115,13 +123,14 @@ button {
   border: none;
   border-radius: var(--radius);
   cursor: pointer;
+  font-size: 1rem;
 }
 
 button:hover {
   background-color: var(--hover-color);
 }
 
-/* ===== CARDS (IMPORTANTE 🔥) ===== */
+/* ===== CARDS ===== */
 .cards,
 .card-container {
   display: grid;
@@ -134,18 +143,16 @@ button:hover {
   background-color: var(--color-white);
   padding: 12px;
   border-radius: var(--radius);
-  box-shadow: 0 4px 10px #0000001A;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   cursor: pointer;
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition: transform 0.2s ease;
   text-align: center;
 }
 
 .card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 8px 20px #00000020;
+  transform: translateY(-5px);
 }
 
-/* ✅ imagem como destaque */
 .card img {
   width: 100%;
   height: 180px;
@@ -162,7 +169,7 @@ button:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #00000099;
+  background-color: rgba(0,0,0,0.6);
   justify-content: center;
   align-items: center;
 }
@@ -185,12 +192,16 @@ button:hover {
   cursor: pointer;
 }
 
-.modal-content h4 {
-  margin-top: 15px;
+/* ===== REMOVE BUTTON ===== */
+.remove-btn {
+  margin-top: 10px;
+  background-color: #d96a50;
+  padding: 8px;
+  font-size: 0.9rem;
 }
 
-.modal-content ul {
-  text-align: left;
+.remove-btn:hover {
+  background-color: #b95540;
 }
 
 /* ===== FOOTER ===== */
@@ -203,14 +214,4 @@ footer {
 
 footer a {
   color: white;
-}
-.remove-btn {
-  margin-top: 10px;
-  background-color: #d96a50;
-  padding: 8px;
-  font-size: 0.9rem;
-}
-
-.remove-btn:hover {
-  background-color: #b95540;
 }
