@@ -7,12 +7,23 @@ function openModal(recipe) {
   const ingredientsList = document.getElementById("modalIngredients");
   const instructions = document.getElementById("modalInstructions");
 
-  // ingredientes fake (por enquanto)
+  // ingredientes
   ingredientsList.innerHTML = recipe.ingredients
     ? recipe.ingredients.map(i => `<li>${i}</li>`).join("")
     : "<li>No ingredients yet</li>";
 
+  // instruções
   instructions.textContent = recipe.instructions || "Instructions coming soon.";
+
+
+  const addBtn = document.getElementById("addToPlannerBtn");
+
+  if (addBtn) {
+    addBtn.onclick = () => {
+      addToPlanner(recipe); // chama o storage.js
+      alert(`${recipe.name} added to planner!`);
+    };
+  }
 
   modal.style.display = "flex";
 }

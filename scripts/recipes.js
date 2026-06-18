@@ -11,13 +11,31 @@ async function loadRecipes() {
 
     const container = document.getElementById("recipeContainer");
 
-    // Segurança: evita erro se não estiver na página correta
     if (!container) return;
 
-    // Criar cards com imagem
     container.innerHTML = data.map(recipe => `
       <div class="card" data-id="${recipe.id}">
         <img src="${recipe.image}" alt="${recipe.name}">
         <h3>${recipe.name}</h3>
       </div>
     `).join("");
+
+    container.addEventListener("click", (e) => {
+      const card = e.target.closest(".card");
+
+      if (!card) return;
+
+      const selected = data.find(r => r.id == card.dataset.id);
+
+      if (selected) {
+        openModal(selected);
+      }
+    });
+
+  } catch (error) {
+    console.error("Error loading recipes:", error);
+  }
+}
+
+document.addEventListener("DOMContentLoaded", loadRecipes);
+

@@ -204,3 +204,13 @@ footer {
 footer a {
   color: white;
 }
+.remove-btn {
+  margin-top: 10px;
+  background-color: #d96a50;
+  padding: 8px;
+  font-size: 0.9rem;
+}
+
+.remove-btn:hover {
+  background-color: #b95540;
+}
