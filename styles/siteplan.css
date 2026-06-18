@@ -215,3 +215,40 @@ footer {
 footer a {
   color: white;
 }
+/* ===== HERO ANIMATION ===== */
+.hero {
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* animação */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+#results {
+  margin-top: 20px;
+}
+
+#results .card {
+  margin-top: 10px;
+}
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.about-photo {
+  width: 200px;    
+  height: 200px;    
+  object-fit: cover; 
+  border-radius: 50%; 
+}

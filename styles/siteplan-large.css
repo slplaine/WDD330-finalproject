@@ -1,5 +1,23 @@
+/* ===== TABLET ===== */
+@media (min-width: 481px) {
+
+  .cards,
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* resultados API */
+  #results {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+/* ===== DESKTOP ===== */
 @media (min-width: 769px) {
-  
+
+  /* ===== HEADER ===== */
   .logo-title {
     flex-direction: row;
     justify-content: center;
@@ -7,26 +25,24 @@
   }
 
   .logo {
-    width: 140px;
+    width: 120px;
   }
 
   header h1 {
-    font-size: 3rem;
+    font-size: 2.8rem;
   }
 
   header p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
-  section {
-    padding: 20px;
-  }
-
+  /* ===== NAV ===== */
   .page-links {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 20px;
+    margin-top: 15px;
     background: none;
     padding: 0;
   }
@@ -35,18 +51,52 @@
     display: none;
   }
 
-  /* ✅ cards desktop */
+  /* ===== SECTIONS ===== */
+  section {
+    padding: 20px;
+  }
+
+  /* ===== CARDS ===== */
   .cards,
   .card-container {
     grid-template-columns: repeat(3, 1fr);
   }
-}
 
-/* tablet */
-@media (min-width: 481px) {
-  .cards,
-  .card-container {
-    grid-template-columns: repeat(2, 1fr);
+  /* ===== API RESULTS ===== */
+  #results {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* ===== ABOUT PAGE  ===== */
+  .about-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .about-text {
+    text-align: left;
+    max-width: 500px;
+  }
+
+  .about-photo {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
   }
 }
-``
+
+/* ===== LARGE SCREENS ===== */
+@media (min-width: 1024px) {
+
+  /* mais espaço para resultados */
+  #results {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .card {
+    max-width: 100%;
+  }
+}
