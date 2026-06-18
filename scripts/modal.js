@@ -2,7 +2,9 @@ function openModal(recipe) {
   const modal = document.getElementById("modal");
 
   document.getElementById("modalTitle").textContent = recipe.name;
-  document.getElementById("modalImage").src = recipe.image;
+
+  // ❌ linha removida (imagem não aparece mais)
+  // document.getElementById("modalImage").src = recipe.image;
 
   const ingredientsList = document.getElementById("modalIngredients");
   const instructions = document.getElementById("modalInstructions");
@@ -15,12 +17,11 @@ function openModal(recipe) {
   // instruções
   instructions.textContent = recipe.instructions || "Instructions coming soon.";
 
-
   const addBtn = document.getElementById("addToPlannerBtn");
 
   if (addBtn) {
     addBtn.onclick = () => {
-      addToPlanner(recipe); // chama o storage.js
+      addToPlanner(recipe);
       alert(`${recipe.name} added to planner!`);
     };
   }
