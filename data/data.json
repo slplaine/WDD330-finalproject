@@ -1,108 +1,95 @@
 [
   {
-    "name": "Granny Square",
-    "difficulty": "Beginner",
-    "time": "30 min",
-    "material": "Cotton yarn",
-    "image": "images/grannysquare.webp"
+    "id": 1,
+    "name": "Spaghetti Carbonara",
+    "image": "images/carbonara.jpg",
+    "category": "Quick Meal",
+    "time": "25 minutes",
+    "ingredients": [
+      "200g spaghetti",
+      "2 eggs",
+      "50g parmesan cheese",
+      "100g pancetta",
+      "Black pepper"
+    ],
+    "instructions": "Cook spaghetti. Fry pancetta. Mix eggs and cheese. Combine everything and serve."
   },
-  {
-    "name": "Scarf",
-    "difficulty": "Beginner",
-    "time": "2 hours",
-    "material": "Acrylic yarn",
-    "image": "images/scarf.webp"
-  },
-  {
-    "name": "Beanie Hat",
-    "difficulty": "Intermediate",
-    "time": "3 hours",
-    "material": "Wool yarn",
-    "image": "images/baeanie-hat.webp"
-  },
-  {
-    "name": "Dishcloth",
-    "difficulty": "Beginner",
-    "time": "1 hour",
-    "material": "Cotton yarn",
-    "image": "images/dishcloth.webp"
-  },
-  {
-    "name": "Blanket",
-    "difficulty": "Advanced",
-    "time": "10 hours",
-    "material": "Chunky yarn",
-    "image": "images/blanket.webp"
-  },
-  {
-    "name": "Amigurumi Toy",
-    "difficulty": "Intermediate",
-    "time": "5 hours",
-    "material": "Cotton yarn",
-    "image": "images/amigurumi.webp"
-  },
-  {
-    "name": "Headband",
-    "difficulty": "Beginner",
-    "time": "40 min",
-    "material": "Acrylic yarn",
-    "image": "images/headband.webp"
-  },
-  {
-    "name": "Gloves",
-    "difficulty": "Advanced",
-    "time": "4 hours",
-    "material": "Wool yarn",    
-    "image": "images/gloves.webp"
-  },
-  {
-    "name": "Coaster",
-    "difficulty": "Beginner",
-    "time": "20 min",
-    "material": "Cotton yarn",
-    "image": "images/coaster.webp"
-  },
-  {
-    "name": "Bag",
-    "difficulty": "Intermediate",
-    "time": "6 hours",
-    "material": "Cord yarn",
-    "image": "images/bag.webp"
-  },
-  {
-    "name": "Shawl",
-    "difficulty": "Advanced",
-    "time": "8 hours",
-    "material": "Lightweight yarn",
-    "image": "images/shawl.webp"
 
-  },
   {
-    "name": "Baby Booties",
-    "difficulty": "Intermediate",
-    "time": "2 hours",
-    "material": "Soft yarn",
-    "image": "images/babybooties.webp"
+    "id": 2,
+    "name": "Chicken Salad",
+    "image": "images/chicken-salad.jpg",
+    "category": "Healthy",
+    "time": "15 minutes",
+    "ingredients": [
+      "Grilled chicken",
+      "Lettuce",
+      "Tomatoes",
+      "Cucumber",
+      "Olive oil"
+    ],
+    "instructions": "Mix all ingredients in a bowl and drizzle with olive oil."
   },
+
   {
-    "name": "Sweater",
-    "difficulty": "Advanced",
-    "time": "15 hours",
-    "material": "Wool yarn",
-    "image": "images/sweater.webp"
+    "id": 3,
+    "name": "Pancakes",
+    "image": "images/pancakes.jpg",
+    "category": "Breakfast",
+    "time": "20 minutes",
+    "ingredients": [
+      "Flour",
+      "Milk",
+      "Eggs",
+      "Sugar",
+      "Butter"
+    ],
+    "instructions": "Mix ingredients, cook on a hot pan, flip, and serve with syrup."
   },
+
   {
-    "name": "Keychain",
-    "difficulty": "Beginner",
-    "time": "15 min",
-    "material": "Cotton yarn",
-    "image": "images/keychain.webp"
+    "id": 4,
+    "name": "Beef Tacos",
+    "image": "images/tacos.jpg",
+    "category": "Dinner",
+    "time": "30 minutes",
+    "ingredients": [
+      "Ground beef",
+      "Taco shells",
+      "Lettuce",
+      "Cheese",
+      "Tomato"
+    ],
+    "instructions": "Cook beef with spices, fill taco shells, and add toppings."
   },
+
   {
-    "name": "Wall Hanging",
-    "difficulty": "Intermediate",
-    "time": "3 hours",
-    "material": "Macrame cord",
-    "image": "images/wallhanging.webp"
+    "id": 5,
+    "name": "Vegetable Stir Fry",
+    "image": "images/stirfry.jpg",
+    "category": "Vegan",
+    "time": "20 minutes",
+    "ingredients": [
+      "Broccoli",
+      "Carrots",
+      "Bell peppers",
+      "Soy sauce",
+      "Garlic"
+    ],
+    "instructions": "Stir fry vegetables in a pan, add sauce, and cook until tender."
+  },
+
+  {
+    "id": 6,
+    "name": "Grilled Cheese Sandwich",
+    "image": "images/grilled-cheese.jpg",
+    "category": "Quick Meal",
+    "time": "10 minutes",
+    "ingredients": [
+      "Bread",
+      "Cheese",
+      "Butter"
+    ],
+    "instructions": "Butter bread, add cheese, grill until golden."
   }
 ]
