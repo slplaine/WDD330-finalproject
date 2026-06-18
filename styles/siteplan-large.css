@@ -1,3 +1,21 @@
+/* ===== TABLET ===== */
+@media (min-width: 600px) {
+
+  .cards,
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  #results {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+}
+
 /* ===== DESKTOP ===== */
 @media (min-width: 1024px) {
 
@@ -40,19 +58,23 @@
     padding: 20px;
   }
 
-  /* CARDS */
+  /* CARDS ✅ AJUSTE IMPORTANTE */
   .cards,
   .card-container {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
   }
 
-  /* API RESULTS */
+  /* RESULTADOS API ✅ */
   #results {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
   }
 
   .card {
-    max-width: 100%;
+    width: 100%;
   }
 
   /* ABOUT */
@@ -74,4 +96,5 @@
     object-fit: cover;
     border-radius: 50%;
   }
+
 }
