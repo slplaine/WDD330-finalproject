@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Spaghetti Carbonara",
-    "image": "images/carbonara.jpg",
+    "image": "images/carbonara.webp",
     "category": "Quick Meal",
     "time": "25 minutes",
     "ingredients": [
@@ -18,7 +18,7 @@
   {
     "id": 2,
     "name": "Chicken Salad",
-    "image": "images/chicken-salad.jpg",
+    "image": "images/chicken-salad.webp",
     "category": "Healthy",
     "time": "15 minutes",
     "ingredients": [
@@ -34,7 +34,7 @@
   {
     "id": 3,
     "name": "Pancakes",
-    "image": "images/pancakes.jpg",
+    "image": "images/pancakes.webp",
     "category": "Breakfast",
     "time": "20 minutes",
     "ingredients": [
@@ -50,7 +50,7 @@
   {
     "id": 4,
     "name": "Beef Tacos",
-    "image": "images/tacos.jpg",
+    "image": "images/tacos.webp",
     "category": "Dinner",
     "time": "30 minutes",
     "ingredients": [
@@ -66,7 +66,7 @@
   {
     "id": 5,
     "name": "Vegetable Stir Fry",
-    "image": "images/stirfry.jpg",
+    "image": "images/stirfry.webp",
     "category": "Vegan",
     "time": "20 minutes",
     "ingredients": [
@@ -82,7 +82,7 @@
   {
     "id": 6,
     "name": "Grilled Cheese Sandwich",
-    "image": "images/grilled-cheese.jpg",
+    "image": "images/grilled-cheese.webp",
     "category": "Quick Meal",
     "time": "10 minutes",
     "ingredients": [
