@@ -125,26 +125,29 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 });
-// ===== SECOND API: RANDOM QUOTE =====
-async function loadQuote() {
+// ===== SECOND API: RANDOM MEAL =====
+async function loadRandomMeal() {
   try {
-    const response = await fetch("https://api.quotable.io/random");
+    const response = await fetch("https://www.themealdb.com/api/json/v1/1/random.php");
     const data = await response.json();
 
     const hero = document.querySelector(".hero");
 
-    if (hero) {
-      const quote = document.createElement("p");
-      quote.textContent = `"${data.content}"`;
-      quote.style.fontStyle = "italic";
-      quote.style.marginTop = "10px";
+    if (hero && data.meals) {
 
-      hero.appendChild(quote);
+      const meal = data.meals[0];
+
+      const randomDiv = document.createElement("p");
+      randomDiv.textContent = `Try today: ${meal.strMeal}`;
+      randomDiv.style.marginTop = "10px";
+      randomDiv.style.fontStyle = "italic";
+
+      hero.appendChild(randomDiv);
     }
 
   } catch (error) {
-    console.error("Quote API error:", error);
+    console.error("Second API error:", error);
   }
 }
 
-loadQuote();
+loadRandomMeal();
