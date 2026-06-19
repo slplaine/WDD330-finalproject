@@ -23,7 +23,7 @@ function loadPlanner() {
     </div>
   `).join("");
 
-  // ✅ EVENTO REMOVER
+  //  EVENTO REMOVER
   document.querySelectorAll(".remove-btn").forEach(btn => {
     btn.addEventListener("click", function () {
       const id = this.dataset.id;
