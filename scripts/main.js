@@ -57,7 +57,7 @@ if (searchBtn && searchInput && results) {
         </div>
       `).join("");
 
-      // ✅ clicar no card
+      // clicar no card
       document.querySelectorAll("#results .card").forEach(card => {
         card.addEventListener("click", () => {
           const url = card.getAttribute("data-url");
@@ -102,12 +102,12 @@ if (form) {
       return;
     }
 
-    // ✅ salvar dados
+    //  salvar dados
     localStorage.setItem("userName", name);
     localStorage.setItem("userEmail", email);
     localStorage.setItem("userMessage", message);
 
-    // ✅ feedback
+    //  feedback
     if (welcomeMessage) {
       welcomeMessage.textContent = `Thank you, ${name}! Redirecting...`;
     }

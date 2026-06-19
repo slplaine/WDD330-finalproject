@@ -3,8 +3,6 @@ function openModal(recipe) {
 
   document.getElementById("modalTitle").textContent = recipe.name;
 
-  // ❌ linha removida (imagem não aparece mais)
-  // document.getElementById("modalImage").src = recipe.image;
 
   const ingredientsList = document.getElementById("modalIngredients");
   const instructions = document.getElementById("modalInstructions");
